@@ -79,6 +79,8 @@ nav ul {
   padding: 1rem;
   margin: 2rem 0;
   border-radius: 25px;
+  min-height: 4rem;
+  align-items: center;
 }
 
 nav li {
@@ -88,17 +90,26 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 900;
+}
+
+nav ul:hover {
+  background-color: var(--orange);
+}
+
+nav a:hover {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* --- Main Section --- */
 
 main {
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 2rem;
 }
 
 section {
@@ -146,6 +157,20 @@ article {
 
 .subsection img {
   max-width: 90%;
+}
+
+.subsection a {
+  text-align: center;
+}
+
+.subsection h2 {
+  font-size: 3vh;
+}
+
+.subsection:hover {
+  background-color: var(--orange);
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* --- Footer --- */
